@@ -7,11 +7,53 @@
 body {
   font-family: sans-serif;
   padding: 1em;
-  background-color: #aac9ba;
+  background-color: #dfc9ad;
 }
 
 h1 {
   text-align: center;
   margin: 1em;
-  color: black;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  padding: 0%;
+  border-radius: 1em;
+  align-items: center;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
+}
+
+.pokemon-image{
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: chocolate;
+}
+
+.pokemon-description {
+  line-height: 1.36em;
+}
+
+.pokemon-powers{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5%;
+  list-style: none;
+}
+
+.pokemo-skill {
+  padding: 0.4em;
+  border-radius: 0.4em;
+  line-height: .75em;
+  color: white;
 }
